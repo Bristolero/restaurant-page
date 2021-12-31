@@ -2,6 +2,7 @@ import headerIcon from './South-Park.png'
 import './style.css'
 import {loadAbout, aboutComponent} from './about.js';
 import loadMenu from './menu.js';
+import loadContact from './contact.js';
 
 
 /*<header><img src="South-Park.png" height="150px" class="header-img"><h1>The Restaurant</h1></header>
@@ -56,7 +57,7 @@ function navComponent() {
     contactButton.classList.add("home-btn");
     contactButton.textContent = "Contact";
     contactButton.addEventListener('click', function() {
-        console.log("hele");
+        loadContact();
     })
 
     nav.appendChild(aboutButton);

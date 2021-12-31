@@ -9,7 +9,7 @@ function menuComponent() {
     const fishSticksImg = imageAdder(fishSticks, 400, "Fish Sticks: $4", "Do you like fish sticks? Do you like putting fish sticks in your mouth? What are you, a gay fish?");
     const chiliImg = imageAdder(chili, 400, "Chili $7", "A delicious chili with a secret ingredient.");
     const kfcImg = imageAdder(kfc, 400, "Skinless KFC Chicken Thighs: $0", "We give out the chicken for free, because nobody wants it without the skin. Somebody ate all the fucking skin. WTF!")
-    const cremeFraicheImg = imageAdder(cremeFraiche, 400, "Extra Creme Fraiche: $1" , "And we're gonna top that with a little Creme Fraiche");
+    const cremeFraicheImg = imageAdder(cremeFraiche, 400, "Extra Creme Fraiche: $1" , "'And we're gonna top that with a little Creme Fraiche.'");
 
     menu.appendChild(fishSticksImg);
     menu.appendChild(chiliImg);
