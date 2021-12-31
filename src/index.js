@@ -1,6 +1,7 @@
 import headerIcon from './South-Park.png'
 import './style.css'
 import {loadAbout, aboutComponent} from './about.js';
+import loadMenu from './menu.js';
 
 
 /*<header><img src="South-Park.png" height="150px" class="header-img"><h1>The Restaurant</h1></header>
@@ -19,6 +20,10 @@ function headerComponent() {
     const img = new Image();
     img.src = headerIcon;
     img.height = 150;
+    img.classList.add("header-img");
+    img.addEventListener('click', function () {
+        loadAbout();
+    })
     const h1 = document.createElement('h1');
     h1.textContent = "The Restaurant";
     header.appendChild(img);
@@ -44,6 +49,7 @@ function navComponent() {
     menuButton.textContent = "Menu";
     menuButton.addEventListener('click', function() {
         console.log("hele");
+        loadMenu();
     })
 
     const contactButton = document.createElement('button');
